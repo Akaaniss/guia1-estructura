@@ -1,6 +1,6 @@
 import numpy as np
 
-matriz = np.random.randint(3,3)
+matriz = np.random.rand(3,3)
 
 determinante = np.linalg.det(matriz)
 
