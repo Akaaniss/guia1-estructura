@@ -8,6 +8,6 @@ matriz_inversa = np.linalg.inv(matriz)
 
 print(matriz_inversa)
 
-matriz_multiplicada = np.multiply(matriz, matriz_inversa)
+matriz_multiplicada = np.dot(matriz, matriz_inversa)
 
 print(matriz_multiplicada)
