@@ -13,3 +13,5 @@ for columas in range(5):
         sumas_columnas += matriz[filas][columas]
         if sumas_columnas > suma_mas_alta:
             suma_mas_alta = sumas_columnas
+
+print("la suma mas alta es:",suma_mas_alta)
