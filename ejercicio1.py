@@ -7,11 +7,21 @@ matriz=[[2,4,6,8,10],
 
 suma_mas_alta= 0
 
-for columas in range(5):
+for columnas in range(5):
     sumas_columnas = 0
     for filas in range(5):
-        sumas_columnas += matriz[filas][columas]
-        if sumas_columnas > suma_mas_alta:
-            suma_mas_alta = sumas_columnas
+        sumas_columnas += matriz[filas][columnas]
+    if sumas_columnas > suma_mas_alta:
+        suma_mas_alta = sumas_columnas
 
 print("la suma mas alta es:",suma_mas_alta)
+
+suma_mas_baja= 10000000
+for filas in range(5):
+    sumas_columnas = 0
+    for columnas in range(5):
+        sumas_columnas += matriz[filas][columnas]
+    if sumas_columnas < suma_mas_baja:
+        suma_mas_baja = sumas_columnas
+
+print("la suma mas baja es:",suma_mas_baja)
