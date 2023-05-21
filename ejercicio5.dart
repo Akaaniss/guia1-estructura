@@ -14,10 +14,10 @@ void main() {
   double promedio3 = calcpromedio(lista3);
 
   
-  List<double> listapromedio = [];
-  listapromedio.add(promedio1);
-  listapromedio.add(promedio2);
-  listapromedio.add(promedio3);
+  List<String> listapromedio = [];
+  listapromedio.add(promedio1.toStringAsFixed(2));
+  listapromedio.add(promedio2.toStringAsFixed(2));
+  listapromedio.add(promedio3.toStringAsFixed(2));
   print('Los promedio de cada lista son los siguientes respectivamente:');
   print(listapromedio);
 }
